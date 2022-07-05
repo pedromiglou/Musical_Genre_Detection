@@ -40,7 +40,7 @@ def plot_loss_comparison(losses, title, legend):
 
 
 def plot_confusion_matrix(y_test, y_pred):
-    plt.matshow(confusion_matrix(y_test, y_pred))
+    plt.matshow(confusion_matrix(y_test, y_pred, labels=[0,1,2,3,4]))
     plt.ylabel("Predicted Category", fontsize=14)
     plt.title("Category", fontsize=14)
     plt.show()
